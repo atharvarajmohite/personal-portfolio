@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharvaraj = Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            /* width: 100vw; */
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(180, 152, 152);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 23px;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 45%;
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 103%;
+        }
+
+        .leftsection {
+            font-size: 2.4rem;
+        }
+
+        .leftsection .btn {
+            position: relative;
+            left: 62px;
+            padding: 9px;
+            margin: 47px 0;
+            background-color: rgb(15 15 56);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        .leftsection .btn:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .content {
+            margin-left: 65px;
+        }
+
+        main hr {
+            background: blueviolet;
+            border: 0;
+            height: 1px;
+            margin: 40px 70px;
+        }
+
+        .secondsection {
+            margin: auto;
+            max-width: 90vw;
+            height: 65vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-blue {
+            color: rgb(158, 158, 230);
+            display: flex;
+            justify-content: center;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 90vw;
+            height: 1px;
+            margin: 65px 0;
+            display: flex;
+        }
+
+        .secondsection .box .vertical {
+            background: white;
+            width: 1px;
+            height: 6vh;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            position: relative;
+            top: -34px;
+            right: 23px;
+            width: 50px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 8px;
+            right: 18px;
+            font-size: 1.2rem;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 8px;
+            right: 18px;
+            font-size: 0.6rem;
+            color: #9fcbf1;
+            width: 133px;
+        }
+
+        .footer {
+            display: flex;
+            background-color: #15022a;
+            /* height: 100px; */
+            justify-content: space-evenly;
+            padding: 50px 60px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            /* height: 40px; */
+            padding: 10px 0;
+            background-color: #15022a;
+            color: grey;
+        }
+
+        @media screen and (max-width: 1357px) {
+            /* body { */
+                /* background-color: red; */
+            /* } */
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            nav {
+                /* width: 100vw; */
+                flex-direction: column;
+                /* justify-content: center;
+                align-items: center; */
+            }
+
+            .leftsection {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .firstsection>div {
+                width: 100%;
+            }
+
+            .leftsection .btn {
+                margin: 20px 0;
+                /* size: 44px; */
+                left: 9px;
+            }
+
+            .secondsection {
+                margin: auto;
+                max-width: 90vw;
+                height: 150vh;
+            }
+
+            .secondsection .box {
+                flex-direction: column;
+            }
+
+            .secondsection .box .vertical {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Atharvaraj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div class="content"> Hi, My name is <span class="purple">Atharvaraj</span>
+                    <div>
+                        and I am a Passionate <br>
+                        <span id="element"></span>
+                    </div>
+                </div>
+                <a href="Atharvaraj Mohite Resume.pdf"><button class="btn">Download Resume</button></a>
+                <a href="https://github.com/atharvaraj16"><button class="btn">Github</button></a>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="" srcset="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-blue">What I have done so far?</span>
+            <h1>MY SKILLS</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <!-- <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, autem sapiente aperiam
+                        quae corrupti provident! Dolor ipsa hic eius molestias odio eligendi!
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Atharvaraj's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy; atharvarajportfolio.com || All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', 'Web Developer', 'Web Designer', 'Graphics Designer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+</body>
+
+</html>
